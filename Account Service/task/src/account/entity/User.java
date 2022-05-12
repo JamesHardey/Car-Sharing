@@ -25,7 +25,7 @@ public class User {
     private String password;
     private String roles;
 
-    public User(String name, String lastname, String email, String password, String roles) {
+    public User(String name, String lastname,@NotNull String email, String password, String roles) {
         this.name = name;
         this.lastname = lastname;
         this.email = email;
@@ -41,6 +41,10 @@ public class User {
     }
 
     public User(){
+    }
+
+    public User(@NotNull @Size(min = 12) String newPassword){
+        this.password = newPassword;
     }
 
     public String getRoles() {

@@ -923,6 +923,18 @@ files:
         }
     }
   learner_created: true
-feedback_link: https://hyperskill.org/projects/217/stages/1088/implement#comment
-status: Unchecked
-record: -1
+- name: src/account/exception/ExistingPasswordException.java
+  visible: true
+  learner_created: true
+- name: src/account/exception/HackersPasswordException.java
+  visible: true
+  learner_created: true
+- name: src/account/exception/ChangePasswordException.java
+  visible: true
+  learner_created: true
+feedback_link: https://hyperskill.org/learn/step/16603#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 11 May 2022 12:17:23 UTC
+record: 3

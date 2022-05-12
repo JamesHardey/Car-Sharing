@@ -3,7 +3,7 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/612593/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: Tue, 19 Apr 2022 09:58:26 UTC
+update_date: Wed, 11 May 2022 12:09:12 UTC
 stages:
 - id: 1086
   step: 16601
@@ -13,7 +13,7 @@ stages:
   is_completed: true
 - id: 1088
   step: 16603
-  is_completed: false
+  is_completed: true
 - id: 1089
   step: 16604
   is_completed: false
@@ -38,12 +38,12 @@ topics:
     theory_id: 6633
   - title: HyperText Transfer Protocol
     theory_id: 6569
-  - title: Immutability
-    theory_id: 7929
-  - title: Introduction to operating systems
-    theory_id: 9704
   - title: Computer algorithms
     theory_id: 16547
+  - title: Immutability
+    theory_id: 7929
+  - title: Introduction to Operating systems
+    theory_id: 9704
   - title: The big O notation
     theory_id: 16699
   - title: Data structures
@@ -52,7 +52,7 @@ topics:
     theory_id: 6434
   - title: HTTP URL
     theory_id: 6740
-  - title: Tags and attributes
+  - title: Tags and Attributes
     theory_id: 7536
   - title: HTML page structure
     theory_id: 6491
@@ -86,6 +86,8 @@ topics:
     theory_id: 14771
   - title: Computer programming
     theory_id: 8739
+  - title: Paradigms
+    theory_id: 15860
   - title: Introduction to Java
     theory_id: 3500
   - title: Basic literals
@@ -126,8 +128,6 @@ topics:
     theory_id: 3507
   - title: Switch statement
     theory_id: 3504
-  - title: Characters
-    theory_id: 3514
   - title: Sizes and ranges
     theory_id: 3532
   - title: Type casting
@@ -140,8 +140,6 @@ topics:
     theory_id: 3489
   - title: Functional decomposition
     theory_id: 10570
-  - title: String
-    theory_id: 3523
   - title: Primitive and reference types
     theory_id: 5035
   - title: Array
@@ -152,6 +150,10 @@ topics:
     theory_id: 3525
   - title: Iterating over arrays
     theory_id: 3602
+  - title: Characters
+    theory_id: 3514
+  - title: String
+    theory_id: 3523
   - title: Final variables
     theory_id: 7427
   - title: Errors in programs
@@ -170,14 +172,20 @@ topics:
     theory_id: 3552
   - title: Web development
     theory_id: 13931
+  - title: Pseudocode
+    theory_id: 15090
+  - title: Pseudocode basics
+    theory_id: 19510
+  - title: Build tools
+    theory_id: 4284
+  - title: External resources
+    theory_id: 6216
   - title: Command line overview
     theory_id: 8977
-  - title: Parameters and options
+  - title: Parameters and Options
     theory_id: 9746
   - title: Java Archive
     theory_id: 4311
-  - title: Build tools
-    theory_id: 4284
   - title: Gradle basics
     theory_id: 5075
   - title: Basic project with Gradle
@@ -186,10 +194,6 @@ topics:
     theory_id: 7917
   - title: Dependency management
     theory_id: 5076
-  - title: External resources
-    theory_id: 6216
-  - title: Pseudocode
-    theory_id: 15090
   - title: Fixed-size array
     theory_id: 7255
   - title: Dynamic array

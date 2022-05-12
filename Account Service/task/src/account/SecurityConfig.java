@@ -10,9 +10,6 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.NoOpPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
-
 
 
 @EnableWebSecurity
@@ -25,21 +22,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     UserDetailsService userDetailsService;
 
     @Autowired
-    PasswordEncoder encoder;
+    BCryptPasswordEncoder encoder;
 
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-
         auth.userDetailsService(userDetailsService).passwordEncoder(getEncoder());
-
     }
-
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-
-
 
         http.httpBasic()
                 .authenticationEntryPoint(restAuthenticationEntryPoint)
@@ -50,6 +42,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .mvcMatchers("/api/auth/signup").permitAll()
                 // other matchers
                 .mvcMatchers("/api/empl/payment").authenticated()
+                .mvcMatchers("/api/auth/changepass").authenticated()
                 .and()
                 .formLogin()
                 .and()
@@ -60,7 +53,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Bean
-    public PasswordEncoder getEncoder(){
+    public BCryptPasswordEncoder getEncoder(){
         return new BCryptPasswordEncoder();
     }
 }

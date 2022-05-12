@@ -23,7 +23,6 @@ public class UserDetailsServiceImpl implements UserService, UserDetailsService {
         if(userEntity.isEmpty()) {
             throw new UsernameNotFoundException("No user found");
         }
-
         User user = userEntity.get();
         return new UserDetailsImpl(user);
     }
@@ -37,7 +36,7 @@ public class UserDetailsServiceImpl implements UserService, UserDetailsService {
         return (userRepository.findByEmail(email).isPresent());
     }
 
-    public User updateUser(User user){
-        return userRepository.updateUser(user.getPassword(),user.getId());
+    public void updateUser(User user) {
+        userRepository.updateUser(user.getPassword(),user.getId());
     }
 }

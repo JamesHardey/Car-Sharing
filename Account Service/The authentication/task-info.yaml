@@ -436,7 +436,7 @@ files:
 - name: src/account/service/UserService.java
   visible: true
   learner_created: true
-feedback_link: https://hyperskill.org/projects/217/stages/1087/implement#comment
+feedback_link: https://hyperskill.org/learn/step/16602#comment
 status: Solved
 feedback:
   message: Congratulations!
